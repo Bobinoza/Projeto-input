@@ -149,7 +149,8 @@ class Main:
         self.i = self.i + 1
 
     def deletar_nome(self):
-        pass
+        self.selected_item = self.tree.selection()        # get selected item
+        self.tree.delete(self.selected_item)
 
 
 ins = Main
